@@ -38,7 +38,11 @@ def juego_ahorcado():
 
     print("Bienvenido al juego del ahorcado")
     print(f"Tenés {intentos} intentos para adivinar la palabra secreta")
-    print(mostrar_progreso(palabra_secreta, letras_adivinadas), "La cantidad de letras de la palabras es:", len(palabra_secreta))
+    print(
+        mostrar_progreso(palabra_secreta, letras_adivinadas),
+        "La cantidad de letras de la palabras es:",
+        len(palabra_secreta),
+    )
 
     while not juego_terminado and intentos > 0:
         adivinanza = input("Introduce una letra: ").lower()
