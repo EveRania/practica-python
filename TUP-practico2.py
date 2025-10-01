@@ -8,7 +8,7 @@ print(frase[-5:])
 print(frase[::-1])
 
 # Ejercicio 2: Métodos de cadenas
-# Enunciado: Escribe un programa que pida al usuario ingresar una frase y realice las siguientes operaciones utilizando métodos de cadenas:
+# Escribe un programa que pida al usuario ingresar una frase y realice las siguientes operaciones utilizando métodos de cadenas:
 # 1. Convertir la frase a mayúsculas.
 # 2. Contar cuántas veces aparece la letra 'a'.
 # 3. Reemplazar las vocales por el símbolo '*'.
@@ -27,21 +27,31 @@ print(
 )
 
 # Ejercicio 3: f-strings
-# Enunciado: Crea un programa que pida al usuario su nombre, edad y ciudad, y luego muestre un mensaje formateado usando f-strings del tipo:
-# •
-# "Hola, [nombre]. Tienes [edad] años y vives en [ciudad]."
-# Concepto: Las f-strings (f"...") permiten insertar variables directamente en una cadena de texto de forma más sencilla y legible.
+# Crea un programa que pida al usuario su nombre, edad y ciudad, y luego muestre un mensaje formateado usando f-strings del tipo:
+# • "Hola, [nombre]. Tienes [edad] años y vives en [ciudad]."
+
+nombre = input("Ingrese su nombre ")
+edad = input("Ingrese su edad ")
+ciudad = input("Ingrese su ciudad ")
+
+print(f"Hola, {nombre}. Tienes {edad} años y vives en {ciudad}.")
+
 # Ejercicio 4: Métodos de listas
-# Enunciado: Escribe un programa que pida al usuario una lista de números (separados por comas) y luego:
-# 1.
-# Muestre la lista original.
-# 2.
-# Ordene la lista de menor a mayor.
-# 3.
-# Elimine el último número de la lista.
-# 4.
-# Añada un nuevo número al inicio de la lista.
-# Concepto: Los métodos de listas como .sort(), .append(), y .pop() son útiles para modificar listas de manera eficiente.
+# Escribe un programa que pida al usuario una lista de números y luego:
+# 1.Muestre la lista original.
+# 2.Ordene la lista de menor a mayor.
+# 3.Elimine el último número de la lista.
+# 4.Añada un nuevo número al inicio de la lista.
+
+lista = list((input("Ingrese una lista de numeros ")))
+print(f"La lista de numeros ingresada es: {lista}")
+lista.sort()
+print(f"La lista de números ordenada de menor a mayor: {lista}")
+lista.pop()
+print(f"La lista con el ultimo número eliminado: {lista}")
+lista.insert(0,5)
+print(f"La lista con el número '5' agregado al inicio de la lista: {lista}")
+
 # Ejercicio 5: Tuplas
 # Enunciado: Crea una tupla con los días de la semana. Luego, pide al usuario un número del 1 al 7 y muestra el día correspondiente.
 # Concepto: Las tuplas son tipos de datos compuestos inmutables, es decir, no se pueden modificar una vez creadas.
