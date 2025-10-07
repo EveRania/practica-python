@@ -49,15 +49,34 @@ lista.sort()
 print(f"La lista de números ordenada de menor a mayor: {lista}")
 lista.pop()
 print(f"La lista con el ultimo número eliminado: {lista}")
-lista.insert(0,5)
+lista.insert(0, 5)
 print(f"La lista con el número '5' agregado al inicio de la lista: {lista}")
 
 # Ejercicio 5: Tuplas
 # Enunciado: Crea una tupla con los días de la semana. Luego, pide al usuario un número del 1 al 7 y muestra el día correspondiente.
-# Concepto: Las tuplas son tipos de datos compuestos inmutables, es decir, no se pueden modificar una vez creadas.
+
+dias = ("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo")
+indice = int(input("Ingrese un número del 1 al 7 "))
+# indice= indice-1
+elemento1 = dias[indice - 1]
+print(f"El día seleccionado es {elemento1}")
+
 # Ejercicio 6: Diccionarios
 # Enunciado: Escribe un programa que pida al usuario ingresar el nombre y edad de varias personas, los guarde en un diccionario y luego permita buscar la edad de una persona específica por su nombre.
-# Concepto: Los diccionarios son estructuras de datos que almacenan pares clave-valor, donde la clave es única.
+
+personas = {}
+
+while True:
+    nombre = input("Ingrese el nombre o 'salir' para terminar ")
+    if nombre.lower() == "salir":
+        break
+    edad = int(input(f"Ingrese la edad de {nombre}: "))
+    personas[nombre] = edad
+
+persona = input("Ingrese el nombre de la persona que deseas buscar ")
+print(f"{persona} tiene {personas[persona]} años ")
+
+
 # Ejercicio 7: Conjuntos
 # Enunciado: Escribe un programa que pida dos listas de números al usuario y luego muestre:
 # 1.
