@@ -84,8 +84,36 @@ print(f"{persona} tiene {personas[persona]} años ")
 # 2.
 # Los elementos que están en la primera lista pero no en la segunda.
 # Concepto: Los conjuntos permiten realizar operaciones como intersección y diferencia para identificar elementos comunes o únicos entre colecciones de datos.
+
+
+lista1 = set(input("Ingrese una lista de números "))
+lista2 = set(input("Ingrese otra lista de números "))
+print(f"La primer lista es {lista1}")
+print(f"La segunda lista es {lista2}")
+
+interseccion = lista1 & lista2
+print(f"Los elementos que están en ambas listas son: {interseccion}")
+
+diferencia = lista1 - lista2
+print(f"Los elementos que están en la primera lista pero no en la segunda son: {diferencia}")
+
+
+# ---------------------------------------------------
+
 # 1. Funciones: Llamada y Retorno de Valores
 # Enunciado: Escribe una función llamada suma que reciba dos números como parámetros, los sume y retorne el resultado. Luego, crea un programa que solicite dos números al usuario, llame a la función suma y muestre el resultado en pantalla.
+
+
+def suma(num1, num2):
+    return num1 + num2
+
+
+num1 = int(input("Ingrese un número "))
+num2 = int(input("Ingrese otro número "))
+print(suma(num1, num2))
+
+
+
 # 2. Parámetros Mutables e Inmutables
 # Enunciado: Crea una función llamada modificar_lista que reciba una lista como parámetro, agregue un nuevo valor a la lista, y luego imprima la lista dentro de la función. Luego, fuera de la función, imprime la lista nuevamente para verificar si ha sido modificada.
 # 3. Parámetros por Defecto
