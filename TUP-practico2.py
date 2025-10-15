@@ -95,7 +95,9 @@ interseccion = lista1 & lista2
 print(f"Los elementos que están en ambas listas son: {interseccion}")
 
 diferencia = lista1 - lista2
-print(f"Los elementos que están en la primera lista pero no en la segunda son: {diferencia}")
+print(
+    f"Los elementos que están en la primera lista pero no en la segunda son: {diferencia}"
+)
 
 
 # ---------------------------------------------------
@@ -113,9 +115,22 @@ num2 = int(input("Ingrese otro número "))
 print(suma(num1, num2))
 
 
-
 # 2. Parámetros Mutables e Inmutables
 # Enunciado: Crea una función llamada modificar_lista que reciba una lista como parámetro, agregue un nuevo valor a la lista, y luego imprima la lista dentro de la función. Luego, fuera de la función, imprime la lista nuevamente para verificar si ha sido modificada.
+
+def modificar_lista(list, nuevo):
+    list.append(nuevo)
+
+    print(list)
+
+meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo"]
+nuevo = input("Ingrese el nuevo valor que quiere agregar a la lista ")
+
+modificar_lista(meses, nuevo)
+
+print(meses)
+
+
 # 3. Parámetros por Defecto
 # Enunciado: Escribe una función llamada saludar que reciba el nombre de una persona y un saludo opcional con un valor por defecto de "Hola". Si el saludo no se especifica, la función debe usar el valor por defecto. Luego, crea un programa que llame a la función varias veces, algunas veces con un saludo personalizado y otras veces sin especificar el saludo.
 # 4. Docstring
