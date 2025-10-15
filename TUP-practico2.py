@@ -83,8 +83,6 @@ print(f"{persona} tiene {personas[persona]} años ")
 # Los elementos que están en ambas listas.
 # 2.
 # Los elementos que están en la primera lista pero no en la segunda.
-# Concepto: Los conjuntos permiten realizar operaciones como intersección y diferencia para identificar elementos comunes o únicos entre colecciones de datos.
-
 
 lista1 = set(input("Ingrese una lista de números "))
 lista2 = set(input("Ingrese otra lista de números "))
@@ -118,10 +116,12 @@ print(suma(num1, num2))
 # 2. Parámetros Mutables e Inmutables
 # Enunciado: Crea una función llamada modificar_lista que reciba una lista como parámetro, agregue un nuevo valor a la lista, y luego imprima la lista dentro de la función. Luego, fuera de la función, imprime la lista nuevamente para verificar si ha sido modificada.
 
+
 def modificar_lista(list, nuevo):
     list.append(nuevo)
 
     print(list)
+
 
 meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo"]
 nuevo = input("Ingrese el nuevo valor que quiere agregar a la lista ")
@@ -133,6 +133,18 @@ print(meses)
 
 # 3. Parámetros por Defecto
 # Enunciado: Escribe una función llamada saludar que reciba el nombre de una persona y un saludo opcional con un valor por defecto de "Hola". Si el saludo no se especifica, la función debe usar el valor por defecto. Luego, crea un programa que llame a la función varias veces, algunas veces con un saludo personalizado y otras veces sin especificar el saludo.
+
+
+def saludar(nombre, saludo="Hola"):
+    print(f"{saludo} {nombre}")
+
+
+saludar("Eve")
+saludar("Flor", "Qué tal")
+saludar("Duko y Taco")
+saludar("Agustín", "Buen día")
+
+
 # 4. Docstring
 # Enunciado: Crea una función llamada multiplicar que reciba dos números y retorne su producto. Asegúrate de agregar un docstring que explique lo que hace la función y los parámetros que recibe.
 # 5. Funciones Lambda/Anónima
