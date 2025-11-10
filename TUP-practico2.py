@@ -147,8 +147,49 @@ saludar("Agustín", "Buen día")
 
 # 4. Docstring
 # Enunciado: Crea una función llamada multiplicar que reciba dos números y retorne su producto. Asegúrate de agregar un docstring que explique lo que hace la función y los parámetros que recibe.
+def multiplicar(num1,num2):
+    """Esta funcion recibe dos numeros por parametros, los multiplica y retorna su resultado"""
+    return num1 * num2
+
+print(multiplicar(7,2))
+
+
 # 5. Funciones Lambda/Anónima
 # Enunciado: Escribe una función lambda que reciba un número y devuelva su cuadrado. Luego, usa la función map para aplicar esta función lambda a una lista de números del 1 al 5.
+
+cuadrado = lambda a: a**2
+
+numeros = [1, 2, 3, 4, 5]
+
+print(list(map(cuadrado, numeros)))
+
+
+
 # 6. Funciones con Argumentos de Referencia y Valor
 # Enunciado: Escribe una función llamada duplicar_valor que reciba una variable y la duplique.
 # luego, crea otra función llamada duplicar_lista que reciba una lista y duplique cada uno de sus elementos. Muestra el efecto de pasar valores por referencia y por valor.
+
+
+def duplicar_valor(a):
+    a = a * 2
+    print("Dentro de la funcion:", a)
+
+
+def duplicar_lista(lista):
+    for i in range(len(lista)):
+        lista[i] *= 2
+    print("Dentro de la funcion", lista)
+
+
+print("Por valor")
+num = 10
+print("Antes de duplicar valor", num)
+duplicar_valor(num)
+print("Después de duplicar valor", num)
+print(20 * "-")
+
+print("Por referencia")
+numeros = [1, 2, 3]
+print("Antes de duplicar lista:", numeros)
+duplicar_lista(numeros)
+print("Despues de duplicar lista:", numeros)
