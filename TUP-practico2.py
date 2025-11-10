@@ -156,8 +156,8 @@ print(multiplicar(7,2))
 
 # 5. Funciones Lambda/Anónima
 # Enunciado: Escribe una función lambda que reciba un número y devuelva su cuadrado. Luego, usa la función map para aplicar esta función lambda a una lista de números del 1 al 5.
-
-cuadrado = lambda a: a**2
+def cuadrado (a) : 
+    return lambda a: a**2
 
 numeros = [1, 2, 3, 4, 5]
 
