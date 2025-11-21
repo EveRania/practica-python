@@ -1,7 +1,11 @@
-# 1) Crear la clase Persona con los métodos “set_nombre”, “set_edad”, “get_nombre”, “get_edad” y “print_persona”. Luego crear dos objetos del tipo Persona e imprimirlos por consola.
+# 2) Agregarle a la clase anterior un constructor que reciba nombre y edad.
 
 
 class Persona:
+    def __init__(self, nombre, edad):
+        self.set_nombre(nombre)
+        self.set_edad(edad)
+
     def set_nombre(self, nombre):
         self.nombre = nombre
 
@@ -20,13 +24,7 @@ class Persona:
         print(f"{self.nombre} tiene {self.edad} años ")
 
 
-persona1 = Persona()
-persona1.set_nombre("Juan")
-persona1.set_edad(34)
-
-persona2 = Persona()
-persona2.set_nombre("Laura")
-persona2.set_edad(20)
-
+persona1 = Persona("Juan", 34)
+persona2 = Persona("Laura", 20)
 persona1.print_persona()
 persona2.print_persona()
