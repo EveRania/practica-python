@@ -1,14 +1,10 @@
 # 4- Agregarle un método “es_mayor_que” el cual recibe un objeto persona y compara su edad con la del objeto actual.
 
 
-import re
-
-
 class Persona:
     def __init__(self, nombre, edad):
         self.set_nombre(nombre)
         self.set_edad(edad)
-        # self.es_mayor_de_edad(nombre, edad)
 
     def set_nombre(self, nombre):
         self.nombre = nombre
@@ -33,12 +29,12 @@ class Persona:
                 f"{self.nombre} tiene {self.edad} años, por lo tanto es mayor de edad"
             )
             return True
-        
+
     def es_mayor_que(self, otra_persona):
-        if self.edad > otra_persona.edad: 
+        if self.edad > otra_persona.edad:
             print(f"{self.nombre} es mayor que {otra_persona.nombre}")
             return True
-        else : 
+        else:
             print(f"{otra_persona.nombre} es mayor que {self.nombre}")
             return False
 
@@ -63,4 +59,3 @@ persona3.es_mayor_de_edad()
 persona1.es_mayor_que(persona2)
 persona3.es_mayor_que(persona1)
 persona2.es_mayor_que(persona3)
-
