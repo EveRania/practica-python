@@ -5,7 +5,7 @@ class Persona:
     def __init__(self, nombre, edad):
         self.set_nombre(nombre)
         self.set_edad(edad)
-        self.es_mayor_de_edad(nombre, edad)
+        # self.es_mayor_de_edad(nombre, edad)
 
     def set_nombre(self, nombre):
         self.nombre = nombre
@@ -19,8 +19,8 @@ class Persona:
     def get_edad(self):
         return self.edad
     
-    def es_mayor_de_edad (self, nombre, edad) : 
-        if edad < 18 : 
+    def es_mayor_de_edad (self) : 
+        if self.edad < 18 : 
             print(f"{self.nombre} tiene {self.edad} años, por lo tanto es menor de edad")
             return False
         else : 
@@ -36,7 +36,12 @@ class Persona:
 persona1 = Persona("Juan", 34)
 persona2 = Persona("Laura", 20)
 persona3 = Persona("Emma", 6)
+
 persona1.print_persona()
 persona2.print_persona()
 persona3.print_persona()
+
+persona1.es_mayor_de_edad()
+persona2.es_mayor_de_edad()
+persona3.es_mayor_de_edad()
 
