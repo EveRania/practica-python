@@ -1,0 +1,16 @@
+Puntaje: 10 puntos | Aprobación: 6+ puntos (cumplir obligatorios + puntos adicionales)
+Consigna:
+Desarrolla un sistema de validación para un formulario de contacto que debe cumplir con los siguientes requisitos:
+Rúbrica de Corrección JavaScript (10 puntos):
+PUNTOS OBLIGATORIOS (deben cumplir SI o SI):
+ Validación en submit - Todos los campos obligatorios - OBLIGATORIO
+ Mensaje de éxito - Mostrar TODOS los valores del formulario - OBLIGATORIO
+ Prevenir envío - Si hay errores - OBLIGATORIO
+Puntos adicionales:
+ Validación en blur - Nombre no vacío
+ Validación en blur - Email con "@" 
+ Validación en input - Email en tiempo real 
+ Validación teléfono - Si se completa, mínimo 8 dígitos
+ Feedback visual - Clases CSS en campos
+ Código limpio y organizado
+Condición de aprobación: Cumplir los 3 puntos obligatorios  + al menos 2 puntos adicionales

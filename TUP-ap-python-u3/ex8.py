@@ -7,22 +7,19 @@ class Calculadora:
         self.num2 = int(input("Ingrese el segundo número entero: "))
 
     def suma(self):
-        print(f"La suma de {self.num1} + {self.num2} es {self.num1+self.num2} ")
-    
+        print(f"La suma de {self.num1} + {self.num2} es {self.num1 + self.num2} ")
+
     def resta(self):
-        print(f"La resta de {self.num1} - {self.num2} es {self.num1-self.num2} ")
-    
+        print(f"La resta de {self.num1} - {self.num2} es {self.num1 - self.num2} ")
+
     def multiplicacion(self):
-        print(f"La multiplicación de {self.num1} * {self.num2} es {self.num1*self.num2} ")
+        print(
+            f"La multiplicación de {self.num1} * {self.num2} es {self.num1 * self.num2} "
+        )
 
     def division(self):
-        print(f"La división de {self.num1} / {self.num2} es {self.num1/self.num2} ")
+        print(f"La división de {self.num1} / {self.num2} es {self.num1 / self.num2} ")
 
-
-    
-
-    def imprimir_numeros(self):
-        print(f"{self.num1}, {self.num2}")
 
 
 cuenta1 = Calculadora()

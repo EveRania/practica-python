@@ -1,0 +1,53 @@
+Pregunta 1
+Sin responder aúnSe puntúa como 0 sobre 1,00 No marcadasMarcar pregunta
+Enunciado de la pregunta
+Parte 3: Sistema de Gestión de Inventario - Python
+Tiempo: 45 minutos
+Puntaje: 10 puntos | Aprobación: 6+ puntos
+
+OBJETIVO
+Implementar un sistema de gestión de inventario para una tienda de electrónica que maneje diferentes tipos de dispositivos, aplicando los principios de Programación Orientada a Objetos.
+
+REQUERIMIENTOS DEL SISTEMA
+
+Características Comunes:
+Todos los dispositivos comparten: marca, modelo, precio y estado (inicialmente "apagado")
+Cada dispositivo debe poder encenderse y mostrar su información específica
+Dispositivos Específicos:
+
+Smartphone:
+Capacidad de almacenamiento en GB
+Capacidad de instalar aplicaciones
+Información debe incluir cantidad de apps instaladas
+
+Tablet:
+Tamaño de pantalla en pulgadas
+Modo tablet especial
+Información debe incluir tamaño de pantalla
+
+Funcionalidades del Programa Principal:
+Crear al menos 3 dispositivos de diferentes tipos
+Mostrar información detallada de cada dispositivo
+Instalar aplicaciones en los smartphones
+Cambiar el estado de todos los dispositivos
+ESTRUCTURA DE ARCHIVOS
+Se proporcionan 4 archivos para implementar la solución:
+dispositivo.py - Clase base (completamente implementada)
+smartphone.py - Clase para smartphones (a implementar)
+tablet.py - Clase para tablets (a implementar)
+main.py - Programa principal (a implementar)
+
+RÚBRICA DE EVALUACIÓN
+PUNTOS OBLIGATORIOS :
+Main - Recorrer lista y mostrar información
+Constructores con herencia correcta 
+
+PUNTOS ADICIONALES:
+Métodos mostrar_info() con polimorfismo
+Instalar aplicaciones en smartphone
+Método modo_tablet() implementado
+Método encender() funcionando
+Código funcionando sin errores
+
+CONDICIÓN DE APROBACIÓN:
+Mínimo 6 puntos - Debe cumplir puntos obligatorios + al menos 2 punto adiciona

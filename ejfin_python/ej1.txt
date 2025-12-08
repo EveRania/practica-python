@@ -1,0 +1,14 @@
+Puntaje: 10 puntos total | Aprobación: 6+ puntos
+Preguntas:
+Herencia y Polimorfismo (3 pts)
+Explica con tus palabras qué es la herencia en POO y cómo el polimorfismo permite que objetos de diferentes clases respondan al mismo mensaje. Da un ejemplo práctico.
+
+HERENCIA Y POLIMORFISMO:
+Herencia: es un mecanismo de la POO que permite crear clases nuevas a partir de clases preexistentes. 
+Las nuevas clases pueden "heredar" o tomar atributos y métodos de clases anteriores. 
+
+
+Agregación vs Composición (3 pts)
+Define ambos conceptos y explica las diferencias clave. Proporciona un ejemplo práctico de cada uno.
+Clases Abstractas (4 pts)
+¿Qué es una clase abstracta? ¿Para qué se utilizan? Define el concepto y proporciona un ejemplo simple.
