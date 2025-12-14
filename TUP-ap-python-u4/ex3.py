@@ -1,6 +1,5 @@
-# 1) Crea la clase Vehiculo, extiende la clase y realiza la siguiente implementación:
-#  Vehículo(color ruedas) : coche (velocidad-km/h)(cilindrada(cc)): camioneta (carga(kg)), bicicleta(tipo urbana/deportiva): motocicleta (velocidad (km/h). cilindrada (cc))
-# Crea al menos un objeto de cada subclase y añádelos a una lista llamada vehiculos.Nota: Puedes utilizar el atributo especial de clase name para recuperar el nombre de la clase de un objeto: type(objeto).__name__
+# 3) Continua con el ejercicio anterior y modifica la función catalogar() para que reciba un argumento optativo ruedas, haciendo que muestre únicamente los que su número de ruedas concuerde con el valor del argumento. También debe mostrar un mensaje “Se han encontrado {} vehículos con {} ruedas:” únicamente si se envía el argumento ruedas. Ponla a prueba con 0, 2 y 4 ruedas como valor.
+
 
 # clase Vehiculo
 class Vehiculo:
@@ -62,8 +61,22 @@ vehiculos = [
 ]
 
 
-# Mostrar vehiculos y el nombre de su clase
-for v in vehiculos:
-    print(v)
-    print("Clase:", type(v).__name__)
-    print()
+def catalogar(vehiculos, ruedas=None):
+    encontrados = []
+
+    for v in vehiculos:
+        if ruedas is None or v.ruedas == ruedas:
+            encontrados.append(v)
+
+    if ruedas is not None:
+        print(f"Se han encontrado {len(encontrados)} vehículos con {ruedas} ruedas: \n")
+
+    for v in encontrados:
+        print(f"Clase: {type(v).__name__}")
+        print(v)
+        print()
+
+
+catalogar(vehiculos, 4)
+catalogar(vehiculos, 0)
+catalogar(vehiculos, 2)

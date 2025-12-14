@@ -48,7 +48,7 @@ class Motocicleta(Bicicleta):
         self.cilindrada = cilindrada
 
     def __str__(self):
-        return f"{type(self).__name__} (color = {self.color}, ruedas = self.ruedas, tipo = self.tipo, velocidad = self.velocidad, cilindrada = self.cilindrada)"
+        return f"{type(self).__name__} (color = {self.color}, ruedas = {self.ruedas}, tipo = {self.tipo}, velocidad = {self.velocidad}, cilindrada = {self.cilindrada})"
 
 
 # Programa principal : crear objetos y agregarlos a una lista
