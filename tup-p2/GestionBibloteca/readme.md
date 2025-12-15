@@ -1,0 +1,11 @@
+## Sistema de Gestión de Bibliotecas
+Modelar un sistema para gestionar libros, usuarios y préstamos en una biblioteca en POO.
+
+### Requisitos:
+- Cada libro tiene un título, año de publicación, autor y género. Si el autor no se conoce del libro, al mismo se le asigna de nombre “Desconocido”.
+- Cada usuario tiene un nombre, un apellido y una lista de los libros que tiene en préstamo. El nombre del usuario es mostrado en todo el sistema cómo “Apellido-Nombre”.
+- Los usuarios pueden tomar prestado un libro si hay copias disponibles. Al prestar un libro, el número de copias disponibles debe decrecer en 1.
+- Los usuarios pueden devolver un libro. Al devolver un libro, el número de copias disponibles debe incrementarse en 1.
+- Los usuarios pueden ver cuántos libros de cada género tienen en préstamo.
+- Además la biblioteca presta revistas, que tienen título, género, mes y año de publicación.
+- Las revistas tienen siempre un único ejemplar y puede ser prestado a un único usuario por vez. 
