@@ -4,6 +4,7 @@
 
 def agregar_una_vez(lista, el) :
     try: 
+        # verificar si el elemento existe
         if el in lista:
             raise ValueError(f"Error: Imposible añadir elementos duplicados => {el}")
         lista.append(el)
